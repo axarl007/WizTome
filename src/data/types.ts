@@ -1,3 +1,5 @@
+export type CollectionId = "leaders" | "careers";
+
 export interface Slide {
   heading: string;
   body: string;
