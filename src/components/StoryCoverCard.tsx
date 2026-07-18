@@ -14,7 +14,7 @@ export function StoryCoverCard({ story, onClick }: StoryCoverCardProps) {
       className={`group relative flex aspect-[3/4] w-full flex-col justify-between overflow-hidden rounded-2xl bg-gradient-to-br text-left shadow-lg ring-1 ring-white/10 transition-all duration-300 ease-out hover:scale-[1.035] hover:shadow-2xl hover:ring-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 ${accentGradient(story.accentColor)}`}
     >
       {/* Overlays */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-black/5" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/15 to-black/0" />
       <div className="absolute inset-0 bg-gradient-to-br from-white/[0.06] to-transparent" />
 
       {/* Ghost chapter number */}

@@ -32,7 +32,7 @@ function App() {
   const { title, subtitle } = COLLECTION_COPY[activeCollection];
 
   return (
-    <div className="min-h-screen bg-neutral-950">
+    <div className="min-h-screen bg-[#12111e]">
       <HomeGrid
         stories={collectionStories}
         onSelect={setActiveChapter}
