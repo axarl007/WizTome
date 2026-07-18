@@ -24,10 +24,10 @@ const COLLECTIONS: Collection[] = [
     tagline: "Strategy · Leadership · Execution",
     description:
       "The Art of War, retold as 13 short stories for founders, executives, and business leaders.",
-    fromColor: "from-amber-400",
-    viaColor: "via-amber-600",
-    toColor: "to-orange-900",
-    orb: "bg-amber-500/15",
+    fromColor: "from-amber-300",
+    viaColor: "via-amber-500",
+    toColor: "to-orange-700",
+    orb: "bg-amber-500/25",
   },
   {
     id: "careers",
@@ -36,21 +36,21 @@ const COLLECTIONS: Collection[] = [
     tagline: "Ambition · Growth · Opportunity",
     description:
       "The same 13 lessons, reframed for ambitious professionals navigating their career.",
-    fromColor: "from-sky-400",
-    viaColor: "via-sky-600",
-    toColor: "to-blue-900",
-    orb: "bg-sky-500/15",
+    fromColor: "from-sky-300",
+    viaColor: "via-sky-500",
+    toColor: "to-blue-700",
+    orb: "bg-sky-500/25",
   },
 ];
 
 export function CollectionSelect({ onSelect }: CollectionSelectProps) {
   return (
-    <div className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-neutral-950 px-4 py-16">
+    <div className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-[#12111e] px-4 py-16">
 
       {/* Ambient background orbs */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden>
-        <div className="absolute -left-1/3 top-1/4 h-[600px] w-[600px] rounded-full bg-amber-600/10 blur-[140px]" />
-        <div className="absolute -right-1/3 bottom-1/4 h-[600px] w-[600px] rounded-full bg-sky-600/10 blur-[140px]" />
+        <div className="absolute -left-1/3 top-1/4 h-[600px] w-[600px] rounded-full bg-amber-500/22 blur-[140px]" />
+        <div className="absolute -right-1/3 bottom-1/4 h-[600px] w-[600px] rounded-full bg-sky-500/22 blur-[140px]" />
         <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
       </div>
 
@@ -82,7 +82,7 @@ export function CollectionSelect({ onSelect }: CollectionSelectProps) {
             className={`animate-fade-up group relative flex min-h-[360px] w-full flex-col overflow-hidden rounded-3xl bg-gradient-to-br text-left ring-1 ring-white/10 transition-all duration-300 ease-out hover:scale-[1.025] hover:ring-white/25 hover:shadow-2xl focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/50 ${c.fromColor} ${c.viaColor} ${c.toColor}`}
           >
             {/* Layered overlays for depth */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/15 to-black/5" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-black/0" />
             <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent" />
 
             {/* Top strip */}

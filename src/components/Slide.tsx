@@ -19,8 +19,8 @@ export function Slide({ slide, index, total, accentColor }: SlideProps) {
       <div
         className={`absolute inset-0 ${
           isLesson
-            ? "bg-gradient-to-t from-black/92 via-black/50 to-black/30"
-            : "bg-gradient-to-t from-black/82 via-black/20 to-transparent"
+            ? "bg-gradient-to-t from-black/80 via-black/40 to-black/20"
+            : "bg-gradient-to-t from-black/68 via-black/15 to-transparent"
         }`}
       />
 
