@@ -11,7 +11,7 @@ export function NavArrow({ direction, onClick, disabled }: NavArrowProps) {
       onClick={onClick}
       disabled={disabled}
       aria-label={direction === "prev" ? "Previous slide" : "Next slide"}
-      className={`absolute top-1/2 z-20 flex h-9 w-9 -translate-y-1/2 items-center justify-center rounded-full bg-black/40 text-white backdrop-blur-sm transition hover:bg-black/60 disabled:opacity-0 disabled:pointer-events-none ${
+      className={`absolute top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-black/45 text-white backdrop-blur-sm transition-all duration-200 hover:bg-black/65 hover:scale-110 disabled:pointer-events-none disabled:opacity-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40 ${
         direction === "prev" ? "left-3" : "right-3"
       }`}
     >

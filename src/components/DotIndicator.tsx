@@ -13,8 +13,10 @@ export function DotIndicator({ count, selectedIndex, onDotClick }: DotIndicatorP
           type="button"
           aria-label={`Go to slide ${i + 1}`}
           onClick={() => onDotClick(i)}
-          className={`h-1.5 rounded-full transition-all ${
-            i === selectedIndex ? "w-5 bg-white" : "w-1.5 bg-white/40"
+          className={`rounded-full transition-all duration-300 ease-out focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-white/60 ${
+            i === selectedIndex
+              ? "w-6 h-1.5 bg-white"
+              : "w-1.5 h-1.5 bg-white/30 hover:bg-white/55"
           }`}
         />
       ))}
